@@ -9,12 +9,15 @@ html {
 body {
   font-size: 1.6rem;
   color: #fff;
-  background-color: hsl(219, 30%, 18%);
   font-family: "Raleway", sans-serif;
+  background: hsl(219, 30%, 18%);
 }
 a {
   text-decoration: none;
   color: #fff;
+}
+p {
+  font-size: 1.4rem;
 }
 li {
   list-style: none;
@@ -58,9 +61,16 @@ header {
 /* Main */
 
 .main {
+  position: relative;
+  padding: 5rem 0;
+}
+
+.main-content {
   width: 60%;
-  margin: 2rem auto;
+  margin: 0 auto;
   text-align: center;
+  position: relative;
+  z-index: 10;
 }
 
 .box-picture img {
@@ -85,4 +95,92 @@ header {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.main-img-background {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.main-img-background img {
+  width: 100%;
+}
+
+/* Section Cards */
+
+.main-cards {
+  padding: 5rem 0;
+  background: hsl(218, 28%, 13%);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 5rem;
+}
+
+.card {
+  padding: 2rem;
+  text-align: center;
+}
+
+.card h3 {
+  margin: 2rem 0 1rem;
+}
+
+/* Section Info */
+
+.main-info {
+  background: hsl(218, 28%, 13%);
+  padding: 5rem 0;
+}
+
+.main-info .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.img-info img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.main-info .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.content h2,
+.content p,
+.content button {
+  margin: 1rem 0;
+}
+
+.btn-info-link {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+  color: hsl(176, 68%, 64%);
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: 0.2s;
+}
+
+.btn-info-link i {
+  font-size: 1rem;
+}
+
+.btn-info-link:hover {
+  background: hsl(176, 68%, 64%);
+  color: hsl(218, 28%, 13%);
+  box-shadow: 0 0 5px hsl(176, 68%, 64%);
 }
