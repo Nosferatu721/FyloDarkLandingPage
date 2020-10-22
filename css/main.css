@@ -30,6 +30,9 @@ li {
 }
 header {
   background: hsl(219, 30%, 18%);
+  position: sticky;
+  top: 0;
+  z-index: 20;
 }
 
 .nav {
@@ -183,4 +186,95 @@ header {
   background: hsl(176, 68%, 64%);
   color: hsl(218, 28%, 13%);
   box-shadow: 0 0 5px hsl(176, 68%, 64%);
+}
+
+/* Section Article */
+
+.main-articles {
+  padding: 5rem 0 15rem;
+  background: hsl(218, 28%, 13%);
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  position: relative;
+}
+
+.article {
+  background: hsl(217, 28%, 15%);
+  box-shadow: 0 0 5px hsl(219, 30%, 18%);
+  padding: 2rem;
+}
+
+.article > p {
+  margin-bottom: 2rem;
+}
+
+.people-article {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 1rem;
+}
+
+.people-article img {
+  border-radius: 50%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.info-people {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-people p {
+  font-size: 1rem;
+}
+
+.img-quotes {
+  position: absolute;
+  top: -3rem;
+  left: -1rem;
+}
+
+/*  */
+
+.container-send {
+  width: 80%;
+  margin: 0 auto;
+  background: hsl(219, 30%, 18%);
+}
+
+/* Footer */
+
+.footer {
+  background: hsl(216, 53%, 9%);
+  padding: 5rem 0;
+}
+
+.info-footer {
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr 1fr;
+  padding: 2rem 0;
+}
+
+.contact p {
+  margin: 1rem 0;
+}
+
+.menu-footer {
+  padding: 0 2rem;
+}
+
+.menu-footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu-footer ul li {
+  padding: 1rem 3rem;
 }
